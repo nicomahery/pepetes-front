@@ -7,7 +7,7 @@ import 'package:pepetes/services/backend-service.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  String BACKEND_LOCATION = String.fromEnvironment('BACKEND_LOCATION', defaultValue: 'localhost:8080');
+  String BACKEND_LOCATION = 'api-pepetes.razafini.com';///String.fromEnvironment('BACKEND_LOCATION', defaultValue: 'localhost:8080');
   GetIt.instance.registerSingleton(BackendService(BACKEND_LOCATION));
   runApp(MyApp());
 }
